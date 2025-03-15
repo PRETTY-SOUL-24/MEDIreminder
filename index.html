@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medication Reminder App - Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <div class="form-container">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter your username" required>
+      
+      <label for="voiceRecording">Record Your Voice Notification:</label>
+      <button id="recordButton">Start Recording</button>
+      <button id="stopButton" disabled>Stop Recording</button>
+      <p id="recordingStatus">Press "Start Recording" to begin.</p>
+      <audio id="recordedAudio" controls></audio>
+      
+      <button onclick="completeSignUp()">Complete Sign Up</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
